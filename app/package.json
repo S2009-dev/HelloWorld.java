@@ -1,0 +1,21 @@
+{
+  "name": "helloworld-java-easter-egg",
+  "version": "1.0.0",
+  "description": "HelloWorld.java easter-egg in curl and browser",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nanowar",
+    "hello",
+    "helloworld",
+    "s2009",
+    "easter-egg"
+  ],
+  "author": "S2009",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

@@ -1,0 +1,74 @@
+main {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to top, red, yellow);
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+main a {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    gap: 2vh;
+    border: solid 2px black;
+    border-radius: 128px;
+    padding: 1vh 4vh;
+    color: black;
+    font-size: 2em;
+    background-color: #00ACFF;
+    justify-self: center;
+}
+
+main a:hover {
+    background-color: transparent;
+    transform: scale(.9);
+}
+
+main .videos {
+    width: 80%;
+    height: 80vh;
+    justify-self: center;
+    background-color: black;
+    border-radius: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .videos iframe {
+    display: none;
+}
+
+main .videos iframe.active {
+    display: block;
+}
+
+main .points {
+    justify-self: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2vh;
+}
+
+main .points span {
+    width: 48px;
+    height: 48px;
+    background-color: white;
+    border: solid 4px black;
+    border-radius: 32px;
+    cursor: pointer;
+}
+
+main .points span:hover {
+    background-color: #FFFF88;
+}
+
+main .points span.active {
+    background-color: yellow;
+}

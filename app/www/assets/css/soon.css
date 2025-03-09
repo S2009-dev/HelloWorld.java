@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    pointer-events: none;
+}
+
+h1, h1:hover {
+    font-family: 'Chopsic', sans-serif;
+    font-size: 16em;
+    background-color: white;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: colorChange 8s infinite;
+    padding: 0 4vh;
+}
+
+h2 {
+    font-size: 4em;
+    animation: opacityAnimation 2s infinite;
+}
+
+@media screen and (max-width: 920px) {
+    h1, h1:hover {
+        font-size: 8em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    h1, h1:hover {
+        font-size: 4em;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+}

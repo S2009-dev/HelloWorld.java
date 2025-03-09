@@ -1,0 +1,102 @@
+/* #################################### */
+/* ############## FONTS ############### */
+/* #################################### */
+
+
+@font-face {
+    font-family: 'Arial Rounded MT';
+    src: url('/src/fonts/Arial-Rounded-MT.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Chopsic';
+    src: url('/src/fonts/Chopsic.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SpaceMono';
+    src: url('/src/fonts/SpaceMono.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* #################################### */
+/* ############ ANIMATIONS ############ */
+/* #################################### */
+
+
+@keyframes scaleAnimation {
+    0% {
+      transform: scale(1); 
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+
+@keyframes colorChange {
+    0% { background-color: red; }
+    50% { background-color: yellow; }
+    100% { background-color: red; }
+}
+
+@keyframes opacityAnimation {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+/* #################################### */
+/* ########## DEFAULT STYLES ########## */
+/* #################################### */
+
+
+*, *::before, *::after, *:hover, *:focus, *:active {
+    font-family: 'Arial Rounded MT', sans-serif;
+    transition: all .3s ease-in-out, fill .09s ease-in-out;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    touch-action: manipulation;
+}
+
+body {
+    overflow: hidden;
+    user-select: none;
+    background-color: black;
+}
+
+h1, h2, h3, h4, p, span, label, li, button {
+    margin: 0;
+    padding: 0;
+}
+
+img, a {
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
