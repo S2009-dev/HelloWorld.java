@@ -26,6 +26,7 @@ curl -L nanowar.it/helloworld
 ```
 
 :warning: `-L` is used to follow redirects so it's important to keep it.  
+
 You can also customize the delay:
 
 ```bash
