@@ -5,7 +5,7 @@ const SessionManager = require('./utils/server/sessionManager');
 const { showSoon, ready, showError, welcome } = require('./utils/server/logger');
 
 const app = express();
-const soon = true;
+const soon = false;
 const releaseDate = '';
 const version = '1.0.0';
 
