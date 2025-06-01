@@ -57,7 +57,7 @@ function showCredits(session){
     res.write(`${colors.bg.brightGreen}${colors.fg.black}CREDITS${colors.reset}\n`);
     res.write(`${colors.fg.gray}This Easter-egg was created and licensed by ${colors.fg.red}S2009${colors.fg.gray}, in collaboration with ${colors.fg.yellow}NanowarOfSteel${colors.fg.gray}.${colors.reset}\n`);
     res.write(`${colors.bg.brightRed}S2009${colors.reset} website: ${colors.fg.cyan}https://s2009.fr/${colors.reset}\n`);
-    res.write(`${colors.bg.white}${colors.fg.black}GitHub${colors.reset} licenses and source code: ${colors.fg.cyan}https://github.com/${colors.reset}\n`);
+    res.write(`${colors.bg.white}${colors.fg.black}GitHub${colors.reset} licenses and source code: ${colors.fg.cyan}https://github.com/S2009-dev/HelloWorld.java/${colors.reset}\n`);
 
     session.disconnect();
 }
